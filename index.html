@@ -19,6 +19,13 @@
   <body>
     <div class="wrapper">
       <header>
+        <img
+          class="profile-avatar"
+          src="/assets/img/avatar-placeholder.png"
+          width="120"
+          height="120"
+          alt="Placeholder profile illustration"
+        />
         <h1>Kaiwen Zhu</h1>
         <nav class="social-links" aria-label="Social links">
           <!-- To enable an optional icon, add its actual href and remove hidden. -->
@@ -80,7 +87,7 @@
           id="about"
           aria-labelledby="about-heading"
         >
-          <h2 id="about-heading">About</h2>
+          <h2 id="about-heading">About me</h2>
           <!-- Add confirmed content here. -->
         </section>
         <section
@@ -101,19 +108,36 @@
         </section>
         <section
           class="content-section"
-          id="projects"
-          aria-labelledby="projects-heading"
-        >
-          <h2 id="projects-heading">Projects</h2>
-          <!-- Add confirmed content here. -->
-        </section>
-        <section
-          class="content-section"
           id="education"
           aria-labelledby="education-heading"
         >
           <h2 id="education-heading">Education</h2>
-          <!-- Add confirmed content here. -->
+          <div class="education-entry">
+            <div class="education-top">
+              <h3>University of Illinois Urbana-Champaign</h3>
+              <span class="education-location">Urbana, IL</span>
+            </div>
+            <div class="education-details">
+              <p>Master of Computer Science</p>
+              <p class="education-dates">
+                <time datetime="2024-09">Sep. 2024</time> –
+                <time datetime="2025-12">Dec. 2025</time>
+              </p>
+            </div>
+          </div>
+          <div class="education-entry">
+            <div class="education-top">
+              <h3>Rutgers University</h3>
+              <span class="education-location">New Brunswick, NJ</span>
+            </div>
+            <div class="education-details">
+              <p>Bachelor of Science in Computer Science</p>
+              <p class="education-dates">
+                <time datetime="2020-09">Sep. 2020</time> –
+                <time datetime="2024-05">May 2024</time>
+              </p>
+            </div>
+          </div>
         </section>
       </main>
     </div>

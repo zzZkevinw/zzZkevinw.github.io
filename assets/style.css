@@ -78,3 +78,58 @@ main .content-section {
     min-height: 100px;
   }
 }
+
+.profile-avatar {
+  display: block;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto 24px;
+}
+.education-entry {
+  margin-top: 23px;
+}
+.education-top,
+.education-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 18px;
+}
+.education-top h3 {
+  margin: 0 0 6px;
+  color: #333;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.education-location {
+  color: #777;
+  font-size: 14px;
+  white-space: nowrap;
+}
+.education-details p {
+  margin: 0;
+}
+.education-dates {
+  color: #777;
+  white-space: nowrap;
+  font-size: 14px;
+}
+@media screen and (max-width: 640px) {
+  .education-top,
+  .education-details {
+    display: block;
+  }
+  .education-top h3 {
+    margin-bottom: 2px;
+  }
+  .education-location {
+    display: block;
+    margin-bottom: 6px;
+  }
+  .education-details .education-dates {
+    margin-top: 4px;
+  }
+}
