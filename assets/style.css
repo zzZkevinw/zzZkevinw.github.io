@@ -159,3 +159,44 @@ main .content-section {
 #about p:last-child {
   margin-bottom: 0;
 }
+
+.publication {
+  padding-top: 7px;
+}
+.publication h3 {
+  font-size: 18px;
+  line-height: 1.45;
+  margin: 0 0 10px;
+}
+.publication h3 a {
+  color: #043361;
+}
+.publication a:hover {
+  text-decoration: underline;
+}
+.publication p {
+  margin: 0 0 6px;
+}
+.publication-authors strong {
+  font-weight: 700;
+}
+.publication-venue {
+  font-style: italic;
+}
+.publication-status {
+  color: #747d84;
+  font-size: 14px;
+}
+.publication-links {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+.publication-links a {
+  display: inline-block;
+  font-size: 13px;
+  color: #32688b;
+  border: 1px solid #dce5eb;
+  padding: 3px 10px;
+  border-radius: 3px;
+}
