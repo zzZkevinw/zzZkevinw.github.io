@@ -1,49 +1,15 @@
-name: Build and deploy al-folio
-
+name: Deploy personal website
 on:
   push:
-    branches: [main, al-folio-site]
+    branches: [main]
   workflow_dispatch:
-
 permissions:
   contents: read
-
 concurrency:
-  group: pages-${{ github.ref }}
+  group: github-pages
   cancel-in-progress: true
-
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: "3.3.5"
-          bundler-cache: true
-      - uses: actions/setup-node@v4
-        with:
-          node-version: "22"
-          cache: npm
-      - run: npm ci
-      - run: npm run lint:prettier
-      - run: bundle exec al-folio upgrade audit --no-fail
-      - name: Build site
-        env:
-          JEKYLL_ENV: production
-        run: bundle exec jekyll build
-      - uses: actions/upload-artifact@v4
-        with:
-          name: site-preview
-          path: _site
-          retention-days: 7
-      - uses: actions/upload-pages-artifact@v3
-        if: github.ref == 'refs/heads/main'
-        with:
-          path: _site
   deploy:
-    if: github.ref == 'refs/heads/main'
-    needs: build
     runs-on: ubuntu-latest
     permissions:
       pages: write
@@ -52,6 +18,15 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      - uses: actions/checkout@v4
+      - name: Prepare public files
+        run: |
+          mkdir _site
+          cp index.html 404.html CNAME robots.txt sitemap.xml _site/
+          cp -R assets projects publications _site/
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
       - name: Publish
         id: deployment
         uses: actions/deploy-pages@v4
