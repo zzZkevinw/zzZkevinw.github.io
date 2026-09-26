@@ -2,14 +2,33 @@
 * {
   box-sizing: border-box;
 }
+body {
+  padding: 0;
+}
+div.wrapper {
+  width: auto;
+  margin: 0;
+  padding: 56px 40px 40px 24px;
+  display: grid;
+  grid-template-columns: 200px minmax(0, 1fr);
+  gap: 56px;
+}
 header {
-  padding-top: 72px;
+  width: 200px;
+  float: none;
+  position: sticky;
+  top: 40px;
+  align-self: start;
+  padding: 8px 0 0;
 }
 main {
-  width: 650px;
-  float: right;
-  padding-top: 64px;
-  padding-bottom: 50px;
+  width: auto;
+  min-width: 0;
+  float: none;
+  padding: 0;
+}
+#about p {
+  max-width: 960px;
 }
 [hidden] {
   display: none !important;
@@ -40,16 +59,6 @@ a:focus-visible {
   outline: 2px solid #32688b;
   outline-offset: 3px;
   border-radius: 3px;
-}
-@media screen and (max-width: 960px) {
-  header {
-    padding-top: 32px;
-  }
-  main {
-    float: none;
-    width: auto;
-    padding-top: 32px;
-  }
 }
 @media print {
   header,
@@ -164,7 +173,7 @@ main .content-section {
   padding-top: 7px;
 }
 .publication h3 {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.4;
   margin: 0 0 5px;
 }
@@ -176,7 +185,7 @@ main .content-section {
 }
 .publication p {
   margin: 0 0 4px;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 1.5;
 }
 .publication-authors strong {
@@ -188,7 +197,7 @@ main .content-section {
 .publication-status {
   font-style: normal;
   color: #747d84;
-  font-size: 14px;
+  font-size: 13px;
 }
 .publication-links {
   display: flex;
@@ -202,11 +211,37 @@ main .content-section {
   padding: 0;
 }
 
-@media screen and (min-width: 1100px) {
-  .wrapper {
-    width: 1060px;
+@media screen and (max-width: 960px) {
+  div.wrapper {
+    padding: 36px 24px;
+    grid-template-columns: 160px minmax(0, 1fr);
+    gap: 32px;
   }
-  main {
-    width: 750px;
+  header {
+    width: 160px;
+  }
+}
+@media screen and (max-width: 640px) {
+  div.wrapper {
+    display: block;
+    padding: 28px 20px;
+  }
+  header {
+    position: static;
+    width: auto;
+    padding: 0;
+    margin-bottom: 36px;
+  }
+  .publication h3 {
+    font-size: 14px;
+  }
+}
+@media print {
+  div.wrapper {
+    display: block;
+    padding: 0;
+  }
+  header {
+    position: static;
   }
 }
