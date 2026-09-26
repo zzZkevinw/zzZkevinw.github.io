@@ -1,20 +1,19 @@
-# Kaiwen Zhu · Personal website
+# Kaiwen Zhu
 
-Live at https://kaiwenzhu.com/.
+Live: https://kaiwenzhu.com/
 
-A small, responsive academic-style homepage using plain HTML and CSS. No JavaScript, external fonts, package installation, or build framework is required.
+Uses the official static HTML edition of [Minimal Light](https://github.com/yaoyao-liu/minimal-light), upstream revision `1ea07f39518ac44644406380c83da6f89037c4fc`. This is the theme's HTML distribution, not a Jekyll build. Original theme styles are in `assets/minimal-light.css`; local adjustments are in `assets/style.css`. Google font imports were removed to use local system fonts. Theme license: `licenses/minimal-light-CC0.txt`.
 
-## Edit
+## Add content gradually
 
-- `index.html`: biography, profile links, and project entries. Add publications once the actual details are available; do not publish sample research as personal work.
-- `assets/style.css`: layout, colors, and responsive styles.
-- Replace the `.portrait` monogram with a real image when ready, and give it descriptive alt text.
-- `CNAME`: custom domain. Keep this unless intentionally changing domains.
+Edit `index.html`. Add each real section inside `<main id="about">`. The page intentionally has no sample biography, publications, project, footer slogan, or placeholder image.
 
-To add a project, duplicate the existing `article.project`, change the title, description and link, and replace its decorative preview with an image with an appropriate alt attribute.
+For example, add an h2 and paragraphs for About, then add Publications or Projects when their contents are ready. Do not publish the theme author's sample credentials or papers.
+
+## Social icons
+
+Email, Google Scholar, GitHub, LinkedIn, and Twitter are available as local SVG icons. Only GitHub is enabled. Find the relevant `data-social` entry, add its real `href`, then remove `hidden`. For email use `mailto:your-address`. Keep unused entries hidden.
 
 ## Preview and publish
 
-Run `python3 -m http.server 8765` from this folder and open http://localhost:8765. Pushing `main` automatically publishes the public files through GitHub Pages. Only the allowlisted site files and asset folders are deployed.
-
-Previous al-folio implementation is preserved on the `al-folio-site` branch. Legacy `/projects/` and `/publications/` links redirect to the homepage.
+Run `python3 -m http.server 8765`, then visit http://localhost:8765. Pushing `main` deploys with GitHub Pages. Keep `CNAME` unchanged. Legacy projects/publications links return to the homepage.
