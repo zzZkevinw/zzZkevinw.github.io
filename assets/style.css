@@ -60,3 +60,21 @@ a:focus-visible {
     padding-top: 0;
   }
 }
+
+main .content-section {
+  float: none;
+  width: 100%;
+  min-height: 112px;
+  padding: 0 0 30px;
+  margin: 0 0 22px;
+  border: 0;
+}
+.content-section h2 {
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e8ecef;
+}
+@media screen and (max-width: 960px) {
+  main .content-section {
+    min-height: 100px;
+  }
+}

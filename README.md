@@ -6,13 +6,13 @@ Uses the official static HTML edition of [Minimal Light](https://github.com/yaoy
 
 ## Add content gradually
 
-Edit `index.html`. Add each real section inside `<main id="about">`. The page intentionally has no sample biography, publications, project, footer slogan, or placeholder image.
+Edit `index.html`. Add each real section inside the corresponding `<section>` in `<main>`. The page intentionally has no sample biography, publications, project, footer slogan, or placeholder image.
 
 For example, add an h2 and paragraphs for About, then add Publications or Projects when their contents are ready. Do not publish the theme author's sample credentials or papers.
 
 ## Social icons
 
-Email, Google Scholar, GitHub, LinkedIn, and Twitter are available as local SVG icons. Only GitHub is enabled. Find the relevant `data-social` entry, add its real `href`, then remove `hidden`. For email use `mailto:your-address`. Keep unused entries hidden.
+Email, Google Scholar, GitHub, LinkedIn, and Twitter are available as local SVG icons. GitHub and Google Scholar are enabled. Find the relevant `data-social` entry, add its real `href`, then remove `hidden`. For email use `mailto:your-address`. Keep unused entries hidden.
 
 ## Preview and publish
 
