@@ -17,3 +17,7 @@ Email, Google Scholar, GitHub, LinkedIn, and Twitter are available as local SVG 
 ## Preview and publish
 
 Run `python3 -m http.server 8765`, then visit http://localhost:8765. Pushing `main` deploys with GitHub Pages. Keep `CNAME` unchanged. Legacy projects/publications links return to the homepage.
+
+## Links
+
+All links open in a new tab/window (`target="_blank"`). Keep `rel="noopener noreferrer"` on new anchors. The document base target also applies this default to future links. Email links follow the browser’s mail-handler settings.
