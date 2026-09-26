@@ -151,3 +151,11 @@ main .content-section {
     content: none;
   }
 }
+
+#about p {
+  line-height: 1.75;
+  margin-bottom: 16px;
+}
+#about p:last-child {
+  margin-bottom: 0;
+}
