@@ -3,7 +3,7 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #f3f1eb;
+  background-color: #f8f7f3;
   color: #4b504d;
   padding: 0;
 }
@@ -121,7 +121,7 @@ main .content-section {
   height: 8px;
   border-radius: 50%;
   background: #66849b;
-  box-shadow: 0 0 0 4px #f3f1eb;
+  box-shadow: 0 0 0 4px #f8f7f3;
 }
 .education-list h3 {
   margin: 0 0 5px;
