@@ -3,6 +3,8 @@
   box-sizing: border-box;
 }
 body {
+  background-color: #f3f1eb;
+  color: #4b504d;
   padding: 0;
 }
 div.wrapper {
@@ -80,7 +82,7 @@ main .content-section {
 }
 .content-section h2 {
   padding-bottom: 12px;
-  border-bottom: 1px solid #e8ecef;
+  border-bottom: 1px solid #dcded5;
 }
 @media screen and (max-width: 960px) {
   main .content-section {
@@ -103,7 +105,7 @@ main .content-section {
 }
 .education-list li {
   position: relative;
-  border-left: 2px solid #e5ebef;
+  border-left: 2px solid #d8ddd4;
   padding: 0 0 28px 22px;
   margin-left: 4px;
 }
@@ -119,7 +121,7 @@ main .content-section {
   height: 8px;
   border-radius: 50%;
   background: #66849b;
-  box-shadow: 0 0 0 4px #fff;
+  box-shadow: 0 0 0 4px #f3f1eb;
 }
 .education-list h3 {
   margin: 0 0 5px;
@@ -181,7 +183,7 @@ main .content-section {
   width: 100%;
   height: auto;
   aspect-ratio: 720 / 520;
-  border: 1px solid #e8ecef;
+  border: 1px solid #dcded5;
   border-radius: 8px;
   background: #fff;
 }
@@ -276,4 +278,37 @@ main .content-section {
   }
 }
 
-.publication-details > h3, .publication-details > p, .publication-details > .publication-links { margin-top: 0; margin-bottom: 0; }
+.publication-details > h3,
+.publication-details > p,
+.publication-details > .publication-links {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Warm neutral palette with muted green headings and links. */
+h1,
+h2,
+.publication h3 a,
+.education-list h3 {
+  color: #344e49;
+}
+a,
+.publication-links a {
+  color: #416962;
+}
+a:hover,
+.social-links a:hover {
+  color: #294e45;
+}
+.social-links a {
+  color: #3f4b45;
+}
+.publication-authors strong,
+strong {
+  color: #343e37;
+}
+@media print {
+  body {
+    background: #fff;
+  }
+}
