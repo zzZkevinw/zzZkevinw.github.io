@@ -172,8 +172,8 @@ main .content-section {
 .publication {
   padding-top: 7px;
   display: grid;
-  grid-template-columns: minmax(220px, 300px) minmax(0, 1fr);
-  align-items: center;
+  grid-template-columns: 200px minmax(0, 1fr);
+  align-items: start;
   gap: 24px;
 }
 .publication-video {
@@ -194,7 +194,7 @@ main .content-section {
     gap: 16px;
   }
   .publication-video {
-    max-width: 360px;
+    max-width: 220px;
   }
 }
 .publication h3 {
