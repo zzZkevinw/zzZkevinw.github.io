@@ -3,8 +3,8 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #fbfaf8;
-  color: #4b504d;
+  background-color: #ffffff;
+  color: #59636e;
   padding: 0;
 }
 div.wrapper {
@@ -82,7 +82,7 @@ main .content-section {
 }
 .content-section h2 {
   padding-bottom: 12px;
-  border-bottom: 1px solid #dcded5;
+  border-bottom: 1px solid #e5e7eb;
 }
 @media screen and (max-width: 960px) {
   main .content-section {
@@ -105,7 +105,7 @@ main .content-section {
 }
 .education-list li {
   position: relative;
-  border-left: 2px solid #d8ddd4;
+  border-left: 2px solid #e5e7eb;
   padding: 0 0 28px 22px;
   margin-left: 4px;
 }
@@ -121,7 +121,7 @@ main .content-section {
   height: 8px;
   border-radius: 50%;
   background: #66849b;
-  box-shadow: 0 0 0 4px #fbfaf8;
+  box-shadow: 0 0 0 4px #ffffff;
 }
 .education-list h3 {
   margin: 0 0 5px;
@@ -183,7 +183,7 @@ main .content-section {
   width: 100%;
   height: auto;
   aspect-ratio: 720 / 520;
-  border: 1px solid #dcded5;
+  border: 1px solid #e5e7eb;
   border-radius: 8px;
   background: #fff;
 }
@@ -285,27 +285,27 @@ main .content-section {
   margin-bottom: 0;
 }
 
-/* Warm neutral palette with muted green headings and links. */
+/* Neutral academic palette: white, slate gray, and blue links. */
 h1,
 h2,
 .publication h3 a,
 .education-list h3 {
-  color: #344e49;
+  color: #494e52;
 }
 a,
 .publication-links a {
-  color: #416962;
+  color: #287f9a;
 }
 a:hover,
 .social-links a:hover {
-  color: #294e45;
+  color: #20667c;
 }
 .social-links a {
-  color: #3f4b45;
+  color: #494e52;
 }
 .publication-authors strong,
 strong {
-  color: #343e37;
+  color: #494e52;
 }
 @media print {
   body {
