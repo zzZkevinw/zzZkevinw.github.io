@@ -8,7 +8,7 @@ body {
 div.wrapper {
   width: auto;
   margin: 0;
-  padding: 56px 40px 40px clamp(56px, 6vw, 112px);
+  padding: 56px 40px 40px clamp(88px, 9vw, 160px);
   display: grid;
   grid-template-columns: 200px minmax(0, 1fr);
   gap: 56px;
