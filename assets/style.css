@@ -172,7 +172,7 @@ main .content-section {
 .publication {
   padding-top: 7px;
   display: grid;
-  grid-template-columns: 180px minmax(0, 1fr);
+  grid-template-columns: 200px minmax(0, 1fr);
   align-items: start;
   gap: 24px;
 }
@@ -186,8 +186,12 @@ main .content-section {
   background: #fff;
 }
 .publication-details {
-  align-self: start;
+  align-self: stretch;
   min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
 }
 @media screen and (max-width: 800px) {
   .publication {
@@ -195,7 +199,7 @@ main .content-section {
     gap: 16px;
   }
   .publication-video {
-    max-width: 180px;
+    max-width: 200px;
   }
 }
 .publication h3 {
@@ -271,3 +275,5 @@ main .content-section {
     position: static;
   }
 }
+
+.publication-details > h3, .publication-details > p, .publication-details > .publication-links { margin-top: 0; margin-bottom: 0; }
