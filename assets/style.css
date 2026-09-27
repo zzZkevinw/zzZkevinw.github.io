@@ -171,6 +171,31 @@ main .content-section {
 
 .publication {
   padding-top: 7px;
+  display: grid;
+  grid-template-columns: minmax(220px, 300px) minmax(0, 1fr);
+  align-items: center;
+  gap: 24px;
+}
+.publication-video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 720 / 520;
+  border: 1px solid #e8ecef;
+  border-radius: 8px;
+  background: #fff;
+}
+.publication-details {
+  min-width: 0;
+}
+@media screen and (max-width: 800px) {
+  .publication {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .publication-video {
+    max-width: 360px;
+  }
 }
 .publication h3 {
   font-size: 14px;
