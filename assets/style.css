@@ -205,7 +205,7 @@ main .content-section {
   }
 }
 .publication h3 {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.4;
   margin: 0 0 5px;
 }
@@ -217,7 +217,7 @@ main .content-section {
 }
 .publication p {
   margin: 0 0 4px;
-  font-size: 13px;
+  font-size: 15px;
   line-height: 1.5;
 }
 .publication-authors strong {
@@ -229,7 +229,7 @@ main .content-section {
 .publication-status {
   font-style: normal;
   color: #747d84;
-  font-size: 13px;
+  font-size: 15px;
 }
 .publication-links {
   display: flex;
@@ -238,7 +238,7 @@ main .content-section {
 }
 .publication-links a {
   display: inline-block;
-  font-size: 13px;
+  font-size: 15px;
   color: #32688b;
   padding: 0;
 }
@@ -265,7 +265,7 @@ main .content-section {
     margin-bottom: 36px;
   }
   .publication h3 {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 @media print {
