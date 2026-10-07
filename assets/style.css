@@ -90,13 +90,22 @@ main .content-section {
   }
 }
 
-.profile-avatar {
-  display: block;
+.profile-photo {
+  position: relative;
   width: 120px;
   height: 120px;
-  object-fit: cover;
+  overflow: hidden;
   border-radius: 50%;
   margin: 0 auto 24px;
+}
+.profile-avatar {
+  position: absolute;
+  display: block;
+  width: 240%;
+  max-width: none;
+  height: auto;
+  left: -118%;
+  top: -105%;
 }
 .education-list {
   list-style: none;
